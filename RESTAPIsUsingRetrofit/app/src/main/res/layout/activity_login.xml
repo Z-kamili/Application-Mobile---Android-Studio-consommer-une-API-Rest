@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/_PasswordInput"
+        android:layout_width="285dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/_DisplayResults"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Password" />
+
+    <EditText
+        android:id="@+id/_UserNameInput"
+        android:layout_width="282dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="UserName"
+        android:textAlignment="textStart"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/_PasswordInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/login_Button"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="203dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="102dp"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/_TitleOfTheActivity"
+        android:layout_width="242dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="104dp"
+        android:fontFamily="sans-serif"
+        android:text="LOGIN PAGE"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/_UserNameInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="LOGIN PAGE" />
+
+    <TextView
+        android:id="@+id/_DisplayResults"
+        android:layout_width="283dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="71dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
